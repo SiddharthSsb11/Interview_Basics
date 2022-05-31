@@ -55,4 +55,23 @@ function x() {
 x();
 console.log(c); */ // 100 //same for functions
 
+//Illegal Shadowing
 
+//Case 1
+
+/* let a = 20;
+{
+var a = 20;
+} */
+// Uncaught SyntaxError: Identifier 'a' has already been declared
+//We cannot shadow let with var. But it is valid to shadow a let using a let. However, we can shadow var with let.
+//All scope rules that work in function are same in arrow functions too.
+
+
+//Case 2
+
+//Since var is function scoped, it is not a problem with the code below.
+let a = 20;
+function x() {
+var a = 20;
+}
