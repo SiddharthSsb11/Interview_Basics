@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Basic JS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
 
-<head>
-	<title>Basic JS</title>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/index.js"></script>
+	<script defer src="src/EventDelegation.js"></script>
+    <script defer src="src/EventBubblingTrickling.js"></script>
+    <script defer src="src/BlockScopeShadowing.js"></script>
+    <script defer src="src/Debouncing.js"></script>
+  </head>
 
-	<script defer src="src/index.js"></script>
-	<!--<script defer src="src/snakeCase.js"></script>-->
-	<script defer src="src/BlockScopeShadowing.js"></script>
-	<script defer src="src/Debouncing.js"></script>
-</head>
+  <body>
+    <div id="app" class="center">
+      <h1>JavaScript</h1>
+    </div>
+    <div class="center" id="category">
+      <ol>
+        <li>SnakeCase</li>
+        <li>Hoisting</li>
+        <li>Scoping</li>
+        <li>Temporal Deadzone</li>
+        <li>Block Scope and Shadowing</li>
+		<li> Debouncing <input type="text"  onkeyup="betterFunction()" /></li>
+      </ol>
+    </div>
 
-<body>
-	<div id="app" class="center">
-		<h1>JavaScript</h1>
-		<input type="text" onkeyup="betterFunction()"/>
-	</div>
-	<div class="center"> 
-		<ol>
-			<li>SnakeCase</li>
-			<li>Hoisting</li>
-			<li>Scoping</li>
-			<li>Temporal Deadzone</li>
-			<li>Block Scope and Shadowing</li>
-		</ol>
-	</div>
-</body>
-
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child"> Event bubbling</div>
+      </div>
+    </div>
+  </body>
 </html>

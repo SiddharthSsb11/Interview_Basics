@@ -11,3 +11,24 @@ body {
     line-height: 1.6
 }
 
+.grandparent {
+    min-width: 80px;
+    min-height: 80px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.parent {
+    min-width: 80px;
+    min-height: 80px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.child {
+    min-width: 80px;
+    min-height: 80px;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
