@@ -13,7 +13,7 @@ function b(x){
   console.log(x,a)//undefined
   var a = 69;
   c();//22
-}
+} 
 b(2) */
 //console.log(a);
 //console.log(b());
@@ -21,21 +21,23 @@ b(2) */
 
 
 console.log(a);
-//var a = 1;
+//let a = 2
+var a = 1;
 //var a =2
-console.log(a);
+//console.log(a);
 function x(){
-    //var a =20;
+    //let a =20;
+    var a = 44;
     a++
     console.log(a);
     if(a){
         console.log(a); 
-        //var a = 40;
-        let a = 
+        var a = 80;
+        //let a = 60
         a++
         console.log(a);
     }
     console.log(a);
 }
 
-x();
+//x();
