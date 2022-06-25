@@ -20,9 +20,9 @@ b(2) */
 //console.log(a)
 
 
-console.log(a);
+/* console.log(a);
 //let a = 2
-var a = 1;
+//var a = 1;
 //var a =2
 //console.log(a);
 function x(){
@@ -40,4 +40,13 @@ function x(){
     console.log(a);
 }
 
-//x();
+//x(); */
+
+const obj = {
+    message: "hello",
+    logMessage(){
+        console.log(this.message);
+    }
+};
+
+setTimeout(obj.logMessage, 1000) // undefined
